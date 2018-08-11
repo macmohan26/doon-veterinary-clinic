@@ -3,7 +3,7 @@
     <parent>
         <artifactId>doon-veterinary-clinic</artifactId>
         <groupId>sonu.springframework</groupId>
-        <version>0.0.4-SNAPSHOT</version>
+        <version>0.0.4</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -12,7 +12,7 @@
         <dependency>
             <artifactId>veterinary-clinic-data</artifactId>
             <groupId>sonu.springframework</groupId>
-            <version>0.0.4-SNAPSHOT</version>
+            <version>0.0.4</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
