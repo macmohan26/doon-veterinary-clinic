@@ -4,7 +4,7 @@
 
     <groupId>sonu.springframework</groupId>
     <artifactId>doon-veterinary-clinic</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5-SNAPSHOT</version>
     <modules>
         <module>veterinary-clinic-data</module>
         <module>veterinary-clinic-web</module>
