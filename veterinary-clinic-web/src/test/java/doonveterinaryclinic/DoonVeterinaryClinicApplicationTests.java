@@ -1,4 +1,4 @@
-package sonu.springframework.doonveterinaryclinic;
+package doonveterinaryclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
