@@ -1,4 +1,4 @@
-package sonu.springframework.doonveterinaryclinic.model.model;
+package sonu.springframework.doonveterinaryclinic.model;
 
 public class Vet extends Person {
 
