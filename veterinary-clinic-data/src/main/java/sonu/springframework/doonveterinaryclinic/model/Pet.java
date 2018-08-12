@@ -1,4 +1,4 @@
-package sonu.springframework.doonveterinaryclinic.model;
+package sonu.springframework.doonveterinaryclinic.model.model;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package sonu.springframework.doonveterinaryclinic.model;
+package sonu.springframework.doonveterinaryclinic.model.model;
 
 public class Person {
     private String firstName;
