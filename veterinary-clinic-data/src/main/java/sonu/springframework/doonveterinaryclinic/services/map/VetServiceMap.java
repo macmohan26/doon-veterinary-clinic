@@ -1,11 +1,11 @@
 package sonu.springframework.doonveterinaryclinic.services.map;
 
 import sonu.springframework.doonveterinaryclinic.model.Vet;
-import sonu.springframework.doonveterinaryclinic.services.CrudService;
+import sonu.springframework.doonveterinaryclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -33,4 +33,6 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
         super.deleteById(id);
 
     }
+
+
 }

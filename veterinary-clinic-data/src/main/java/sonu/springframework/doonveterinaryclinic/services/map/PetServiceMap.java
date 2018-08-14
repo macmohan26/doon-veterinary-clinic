@@ -1,11 +1,11 @@
 package sonu.springframework.doonveterinaryclinic.services.map;
 
 import sonu.springframework.doonveterinaryclinic.model.Pet;
-import sonu.springframework.doonveterinaryclinic.services.CrudService;
+import sonu.springframework.doonveterinaryclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
