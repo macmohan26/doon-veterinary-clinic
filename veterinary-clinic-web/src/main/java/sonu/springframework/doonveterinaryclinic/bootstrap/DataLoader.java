@@ -6,8 +6,6 @@ import sonu.springframework.doonveterinaryclinic.model.Owner;
 import sonu.springframework.doonveterinaryclinic.model.Vet;
 import sonu.springframework.doonveterinaryclinic.services.OwnerService;
 import sonu.springframework.doonveterinaryclinic.services.VetService;
-import sonu.springframework.doonveterinaryclinic.services.map.OwnerServiceMap;
-import sonu.springframework.doonveterinaryclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,11 +13,11 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
     @Override
     public void run(String... args) throws Exception {
         Owner owner1 = new Owner();
