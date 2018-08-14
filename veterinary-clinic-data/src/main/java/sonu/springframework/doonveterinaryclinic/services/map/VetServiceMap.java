@@ -1,10 +1,12 @@
 package sonu.springframework.doonveterinaryclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import sonu.springframework.doonveterinaryclinic.model.Vet;
 import sonu.springframework.doonveterinaryclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
@@ -19,7 +21,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
