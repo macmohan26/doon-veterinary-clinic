@@ -4,7 +4,7 @@
 
     <groupId>sonu.springframework</groupId>
     <artifactId>doon-veterinary-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>veterinary-clinic-data</module>
         <module>veterinary-clinic-web</module>
@@ -38,13 +38,14 @@
                 <configuration>
                     <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <pushChanges>false</pushChanges>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/macmohan26/doon-veterinary-clinic.git</developerConnection>
-    <tag>doon-veterinary-clinic-0.0.1</tag>
+
   </scm>
 
 
