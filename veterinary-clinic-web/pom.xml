@@ -12,6 +12,7 @@
         <dependency>
             <artifactId>veterinary-clinic-data</artifactId>
             <groupId>sonu.springframework</groupId>
+
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
