@@ -1,0 +1,40 @@
+package sonu.springframework.doonveterinaryclinic.services.map;
+
+import sonu.springframework.doonveterinaryclinic.model.Visit;
+import sonu.springframework.doonveterinaryclinic.services.VisitService;
+
+import java.util.Set;
+
+public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
+
+    @Override
+    public Set<Visit> findAll() {
+        return super.findAll();
+    }
+
+    @Override
+    public Visit findById(Long id) {
+        return super.findByID(id);
+    }
+
+    @Override
+    public Visit save(Visit visit) {
+        if (visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null
+
+                || visit.getPet().getOwner().getId() == null){
+            throw new RuntimeException("Invalid Visit");
+        }
+        return super.save(visit);
+    }
+
+    @Override
+    public void delete(Visit object) {
+        super.delete(object);
+
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        super.deleteById(id);
+    }
+}
