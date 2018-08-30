@@ -8,6 +8,10 @@ import java.util.Set;
 @Table(name = "owners")
 public class Owner extends Person {
 
+
+    @Id
+    private Long id;
+
     @Column(name = "address")
     private String address;
 
@@ -19,6 +23,9 @@ public class Owner extends Person {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
+
+    public Owner() {
+    }
 
     public Set<Pet> getPets() {
         return pets;
@@ -50,5 +57,15 @@ public class Owner extends Person {
 
     public void setTelephone(String telephone) {
         this.telephone = telephone;
+    }
+
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
     }
 }
