@@ -1,5 +1,6 @@
 package sonu.springframework.doonveterinaryclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import sonu.springframework.doonveterinaryclinic.model.Speciality;
 import sonu.springframework.doonveterinaryclinic.services.SpecialtyService;
@@ -7,6 +8,7 @@ import sonu.springframework.doonveterinaryclinic.services.SpecialtyService;
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
 public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
 
     @Override
